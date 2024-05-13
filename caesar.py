@@ -25,6 +25,10 @@ def calcdiff(table1, table2):
         diff += abs(float(table1[i][1]) - float(table2[i][1]))
     return diff
 
+def findshift(secret):
+    lowDiff = []
+    
+
 with open('letter_freq.txt', 'r') as letter_freq:
     for line in letter_freq:
         splitLine = line.strip().split('\t')
